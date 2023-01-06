@@ -1,0 +1,145 @@
+:root {
+    --black: black;
+    --white: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#operation,
+#result {
+    margin-right: 10px;
+}
+
+.button {
+    color: var(--fontColor);
+    width: 100%;
+    font-weight: 500;
+    background: var(--bgColor);
+    font-size: xx-large;
+}
+
+.embroidered {
+    border: 1px solid var(--fontColor)
+}
+
+.button:hover {
+    background-color: var(--fontColor);
+    color: var(--bgColor);
+}
+
+.operation-button:hover {
+    color: rgb(0, 183, 255);
+}
+
+.AC-button:hover {
+    color: tomato;
+}
+
+.result-button:hover {
+    background-color: rgb(0, 183, 255);
+    color: var(--bgColor);
+}
+
+.button-container {
+    padding: 0;
+}
+
+.button-space {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+#result {
+    color: rgb(0, 183, 255);
+}
+
+.operation-button {
+    color: rgb(0, 183, 255);
+}
+
+.AC-button {
+    color: tomato;
+}
+
+.result-button {
+    color: var(--fontColor);
+    background-color: var(--bgColor);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+}
+
+
+.theme-button {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    background-color: rgb(0, 183, 255);
+}
+
+.ball {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    border: 1px solid var(--fontColor);
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: left 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball-move {
+    left: calc(100% - 20px);
+    background-color: #000000;
+}
+
+.dark-theme {
+    --bgColor: var(--black);
+    --fontColor: var(--white);
+}
+
+.light-theme {
+    --bgColor: var(--white);
+    --fontColor: var(--black);
+}
+
+.full-row {
+    background-color: var(--bgColor);
+}
+
+.display-content {
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.header {
+    color: var(--fontColor);
+}
+
+.footer {
+    color: var(--fontColor);
+}
+
+.nav-link:hover {
+    color: var(--fontColor);
+}
